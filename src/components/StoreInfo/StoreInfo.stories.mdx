@@ -1,0 +1,31 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import { Header } from './Header';
+import { HeaderMenuList } from './HeaderMenuList';
+
+<Meta title="Components/Header" component={Header} />
+
+# Header
+
+Componente header
+
+<ArgsTable of={Header} />
+
+
+<Canvas>
+  <Story
+    name="Header"
+    args={{
+      ...Header.defaultProps,
+    }}
+  >
+    {(args) => <Header {...args} />}
+  </Story>
+  <Story
+    name="HeaderMenuList"
+    args={{
+      ...Header.defaultProps,
+    }}
+  >
+    {(args) => <HeaderMenuList {...args} />}
+  </Story>
+</Canvas>

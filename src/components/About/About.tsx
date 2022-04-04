@@ -1,10 +1,11 @@
-import { Avatar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material'
-import styles from './About.module.scss'
+import { Avatar, Box } from '@mui/material'
 
 export function About() {
     return (
-        <Box sx={{ height: '240px' }} className={styles.about}>
+        <Box sx={{ height: '240px' }}>
             <img
+                alt="Exemple of food"
+                style={{ width: '100%', height: '100%' }}
                 src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/394fda6b242f7f92d5994032dd52abb6/72b96263b7820864bba1eae7_rw_1920.gif?h=0765da6f74d1cf745336035a0d20698d"
             />
 
